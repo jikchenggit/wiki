@@ -2,7 +2,7 @@
 title: vim实用技巧
 description: vim实用技巧
 published: true
-date: 2021-08-23T03:32:33.239Z
+date: 2021-08-23T13:41:30.172Z
 tags: vim, 实用技巧
 editor: markdown
 dateCreated: 2020-06-30T16:56:45.035Z
@@ -37,4 +37,5 @@ dateCreated: 2020-06-30T16:56:45.035Z
 - [Vundle  插件管理器使用](/zh/linux/vim实用技巧/Vundle插件管理器使用)
 - [bash_suport 插件使用](/zh/linux/vim实用技巧/bashsuport插件使用)
 - [awk_suport 插件使用](/zh/linux/vim实用技巧/awksuport插件使用)
+- [vim-surroud 插件使用](/zh/linux/vim实用技巧/vimsurroud插件使用)
 {.links-list}
