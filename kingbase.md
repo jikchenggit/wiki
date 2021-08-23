@@ -9,6 +9,9 @@ dateCreated: 2020-02-29T14:19:18.899Z
 ---
 
 # 阅读此文档的准备
+{.grid-list}  
+ - 什么是kingbase 
+{.links-list}
 # kingbase 快速使用教程
 # kingbase SQL 教程
 # kingbase 系统管理
