@@ -1,0 +1,196 @@
+---
+title: sql命令
+description: SQL命令
+published: true
+date: 2021-08-23T03:55:51.074Z
+tags: 
+editor: markdown
+dateCreated: 2020-12-17T13:39:47.293Z
+---
+
+这部分包含PostgreSQL支持的SQL命令的参考信息。每条命令的标准符合和兼容的信息可以在相关的参考页中找到。
+
+**目录**
+
+- [ABORT](sql-abort) — 中止当前事务
+- [ALTER AGGREGATE](sql-alteraggregate) — 更改一个聚集函数的定义
+- [ALTER COLLATION](sql-altercollation) — 更改一个排序规则的定义
+- [ALTER CONVERSION](sql-alterconversion) — 改变一个转换的定义
+- [ALTER DATABASE](sql-alterdatabase) — 更改一个数据库
+- [ALTER DEFAULT PRIVILEGES](sql-alterdefaultprivileges) — 定义默认访问特权
+- [ALTER DOMAIN](sql-alterdomain) — 更改一个域的定义
+- [ALTER EVENT TRIGGER](sql-altereventtrigger) — 更改一个事件触发器的定义
+- [ALTER EXTENSION](sql-alterextension) — 更改一个扩展的定义
+- [ALTER FOREIGN DATA WRAPPER](sql-alterforeigndatawrapper) — 更改一个外部数据包装器的定义
+- [ALTER FOREIGN TABLE](sql-alterforeigntable) — 更改一个外部表的定义
+- [ALTER FUNCTION](sql-alterfunction) — 更改一个函数的定义
+- [ALTER GROUP](sql-altergroup) — 更改角色名称或者成员关系
+- [ALTER INDEX](sql-alterindex) — 更改一个索引的定义
+- [ALTER LANGUAGE](sql-alterlanguage) — 更改一种过程语言的定义
+- [ALTER LARGE OBJECT](sql-alterlargeobject) — 更改一个大对象的定义
+- [ALTER MATERIALIZED VIEW](sql-altermaterializedview) — 更改一个物化视图的定义
+- [ALTER OPERATOR](sql-alteroperator) — 更改一个操作符的定义
+- [ALTER OPERATOR CLASS](sql-alteropclass) — 更改一个操作符类的定义
+- [ALTER OPERATOR FAMILY](sql-alteropfamily) — 更改一个操作符族的定义
+- [ALTER POLICY](sql-alterpolicy) — 更改一条行级安全性策略的定义
+- [ALTER PROCEDURE](sql-alterprocedure) — 更改一个过程的定义
+- [ALTER PUBLICATION](sql-alterpublication) — 修改发布的定义
+- [ALTER ROLE](sql-alterrole) — 更改一个数据库角色
+- [ALTER ROUTINE](sql-alterroutine) — 更改一个例程的定义
+- [ALTER RULE](sql-alterrule) — 更改一个规则定义
+- [ALTER SCHEMA](sql-alterschema) — 更改一个模式的定义
+- [ALTER SEQUENCE](sql-altersequence) — 更改一个序列发生器的定义
+- [ALTER SERVER](sql-alterserver) — 更改一个外部服务器的定义
+- [ALTER STATISTICS](sql-alterstatistics) — 更改扩展统计对象的定义
+- [ALTER SUBSCRIPTION](sql-altersubscription) — 修改订阅的定义
+- [ALTER SYSTEM](sql-altersystem) — 更改一个服务器配置参数
+- [ALTER TABLE](sql-altertable) — 更改一个表的定义
+- [ALTER TABLESPACE](sql-altertablespace) — 更改一个表空间的定义
+- [ALTER TEXT SEARCH CONFIGURATION](sql-altertsconfig) — 更改一个文本搜索配置的定义
+- [ALTER TEXT SEARCH DICTIONARY](sql-altertsdictionary) — 更改一个文本搜索字典的定义
+- [ALTER TEXT SEARCH PARSER](sql-altertsparser) — 更改一个文本搜索解析器的定义
+- [ALTER TEXT SEARCH TEMPLATE](sql-altertstemplate) — 更改一个文本搜索模板的定义
+- [ALTER TRIGGER](sql-altertrigger) — 更改一个触发器的定义
+- [ALTER TYPE](sql-altertype) — 更改一个类型的定义
+- [ALTER USER](sql-alteruser) — 更改一个数据库角色
+- [ALTER USER MAPPING](sql-alterusermapping) — 更改一个用户映射的定义
+- [ALTER VIEW](sql-alterview) — 更改一个视图的定义
+- [ANALYZE](sql-analyze) — 收集有关一个数据库的统计信息
+- [BEGIN](sql-begin) — 开始一个事务块
+- [CALL](sql-call) — 调用一个过程
+- [CHECKPOINT](sql-checkpoint) — 强制一个事务日志检查点
+- [CLOSE](sql-close) — 关闭一个游标
+- [CLUSTER](sql-cluster) — 根据一个索引聚簇一个表
+- [COMMENT](sql-comment) — 定义或者更改一个对象的注释
+- [COMMIT](sql-commit) — 提交当前事务
+- [COMMIT PREPARED](sql-commit-prepared) — 提交一个早前为两阶段提交预备的事务
+- [COPY](sql-copy) — 在一个文件和一个表之间复制数据
+- [CREATE ACCESS METHOD](sql-create-access-method) — 定义一种新的访问方法
+- [CREATE AGGREGATE](sql-createaggregate) — 定义一个新的聚集函数
+- [CREATE CAST](sql-createcast) — 定义一种新的造型
+- [CREATE COLLATION](sql-createcollation) — 定义一种新排序规则
+- [CREATE CONVERSION](sql-createconversion) — 定义一种新的编码转换
+- [CREATE DATABASE](sql-createdatabase) — 创建一个新数据库
+- [CREATE DOMAIN](sql-createdomain) — 定义一个新的域
+- [CREATE EVENT TRIGGER](sql-createeventtrigger) — 定义一个新的事件触发器
+- [CREATE EXTENSION](sql-createextension) — 安装一个扩展
+- [CREATE FOREIGN DATA WRAPPER](sql-createforeigndatawrapper) — 定义一个新的外部数据包装器
+- [CREATE FOREIGN TABLE](sql-createforeigntable) — 定义一个新的外部表
+- [CREATE FUNCTION](sql-createfunction) — 定义一个新函数
+- [CREATE GROUP](sql-creategroup) — 定义一个新的数据库角色
+- [CREATE INDEX](sql-createindex) — 定义一个新索引
+- [CREATE LANGUAGE](sql-createlanguage) — 定义一种新的过程语言
+- [CREATE MATERIALIZED VIEW](sql-creatematerializedview) — 定义一个新的物化视图
+- [CREATE OPERATOR](sql-createoperator) — 定义一个新的操作符
+- [CREATE OPERATOR CLASS](sql-createopclass) — 定义一个新的操作符类
+- [CREATE OPERATOR FAMILY](sql-createopfamily) — 定义一个新的操作符族
+- [CREATE POLICY](sql-createpolicy) — 为一个表定义一条新的行级安全性策略
+- [CREATE PROCEDURE](sql-createprocedure) — 定义一个新的过程
+- [CREATE PUBLICATION](sql-createpublication) — 定义一个新的发布
+- [CREATE ROLE](sql-createrole) — 定义一个新的数据库角色
+- [CREATE RULE](sql-createrule) — 定义一条新的重写规则
+- [CREATE SCHEMA](sql-createschema) — 定义一个新模式
+- [CREATE SEQUENCE](sql-createsequence) — 定义一个新的序列发生器
+- [CREATE SERVER](sql-createserver) — 定义一个新的外部服务器
+- [CREATE STATISTICS](sql-createstatistics) — 定义扩展统计
+- [CREATE SUBSCRIPTION](sql-createsubscription) — 定义一个新的订阅
+- [CREATE TABLE](sql-createtable) — 定义一个新表
+- [CREATE TABLE AS](sql-createtableas) — 从一个查询的结果创建一个新表
+- [CREATE TABLESPACE](sql-createtablespace) — 定义一个新的表空间
+- [CREATE TEXT SEARCH CONFIGURATION](sql-createtsconfig) — 定义一个新的文本搜索配置
+- [CREATE TEXT SEARCH DICTIONARY](sql-createtsdictionary) — 定义一个新的文本搜索字典
+- [CREATE TEXT SEARCH PARSER](sql-createtsparser) — 定义一个新的文本搜索解析器
+- [CREATE TEXT SEARCH TEMPLATE](sql-createtstemplate) — 定义一种新的文本搜索模板
+- [CREATE TRANSFORM](sql-createtransform) — 定义一个新的转换
+- [CREATE TRIGGER](sql-createtrigger) — 定义一个新触发器
+- [CREATE TYPE](sql-createtype) — 定义一种新的数据类型
+- [CREATE USER](sql-createuser) — 定义一个新的数据库角色
+- [CREATE USER MAPPING](sql-createusermapping) — 定义一个用户到一个外部服务器的新映射
+- [CREATE VIEW](sql-createview) — 定义一个新视图
+- [DEALLOCATE](sql-deallocate) — 释放一个预备语句
+- [DECLARE](sql-declare) — 定义一个游标
+- [DELETE](sql-delete) — 删除一个表的行
+- [DISCARD](sql-discard) — 抛弃会话状态
+- [DO](sql-do) — 执行一个匿名代码块
+- [DROP ACCESS METHOD](sql-drop-access-method) — 移除一种访问方法
+- [DROP AGGREGATE](sql-dropaggregate) — 移除一个聚集函数
+- [DROP CAST](sql-dropcast) — 移除一个造型
+- [DROP COLLATION](sql-dropcollation) — 移除一个排序规则
+- [DROP CONVERSION](sql-dropconversion) — 移除一个转换
+- [DROP DATABASE](sql-dropdatabase) — 移除一个数据库
+- [DROP DOMAIN](sql-dropdomain) — 移除一个域
+- [DROP EVENT TRIGGER](sql-dropeventtrigger) — 移除一个事件触发器
+- [DROP EXTENSION](sql-dropextension) — 移除一个扩展
+- [DROP FOREIGN DATA WRAPPER](sql-dropforeigndatawrapper) — 移除一个外部数据包装器
+- [DROP FOREIGN TABLE](sql-dropforeigntable) — 移除一个外部表
+- [DROP FUNCTION](sql-dropfunction) — 移除一个函数
+- [DROP GROUP](sql-dropgroup) — 移除一个数据库角色
+- [DROP INDEX](sql-dropindex) — 移除一个索引
+- [DROP LANGUAGE](sql-droplanguage) — 移除一个过程语言
+- [DROP MATERIALIZED VIEW](sql-dropmaterializedview) — 移除一个物化视图
+- [DROP OPERATOR](sql-dropoperator) — 移除一个操作符
+- [DROP OPERATOR CLASS](sql-dropopclass) — 移除一个操作符类
+- [DROP OPERATOR FAMILY](sql-dropopfamily) — 移除一个操作符族
+- [DROP OWNED](sql-drop-owned) — 移除一个数据库角色拥有的数据库对象
+- [DROP POLICY](sql-droppolicy) — 从一个表移除一条行级安全性策略
+- [DROP PROCEDURE](sql-dropprocedure) — 移除一个过程
+- [DROP PUBLICATION](sql-droppublication) — 删除一个发布
+- [DROP ROLE](sql-droprole) — 移除一个数据库角色
+- [DROP ROUTINE](sql-droproutine) — 删除一个例程
+- [DROP RULE](sql-droprule) — 移除一个重写规则
+- [DROP SCHEMA](sql-dropschema) — 移除一个模式
+- [DROP SEQUENCE](sql-dropsequence) — 移除一个序列
+- [DROP SERVER](sql-dropserver) — 移除一个外部服务器描述符
+- [DROP STATISTICS](sql-dropstatistics) — 删除扩展统计
+- [DROP SUBSCRIPTION](sql-dropsubscription) — 删除一个订阅
+- [DROP TABLE](sql-droptable) — 移除一个表
+- [DROP TABLESPACE](sql-droptablespace) — 移除一个表空间
+- [DROP TEXT SEARCH CONFIGURATION](sql-droptsconfig) — 移除一个文本搜索配置
+- [DROP TEXT SEARCH DICTIONARY](sql-droptsdictionary) — 移除一个文本搜索字典
+- [DROP TEXT SEARCH PARSER](sql-droptsparser) — 移除一个文本搜索解析器
+- [DROP TEXT SEARCH TEMPLATE](sql-droptstemplate) — 移除一个文本搜索模板
+- [DROP TRANSFORM](sql-droptransform) — 移除转换
+- [DROP TRIGGER](sql-droptrigger) — 移除一个触发器
+- [DROP TYPE](sql-droptype) — 移除一个数据类型
+- [DROP USER](sql-dropuser) — 移除一个数据库角色
+- [DROP USER MAPPING](sql-dropusermapping) — 移除一个用于外部服务器的用户映射
+- [DROP VIEW](sql-dropview) — 移除一个视图
+- [END](sql-end) — 提交当前事务
+- [EXECUTE](sql-execute) — 执行一个预备语句
+- [EXPLAIN](sql-explain) — 显示一个语句的执行计划
+- [FETCH](sql-fetch) — 使用游标从查询中检索行
+- [GRANT](sql-grant) — 定义访问特权
+- [IMPORT FOREIGN SCHEMA](sql-importforeignschema) — 从一个外部服务器导入表定义
+- [INSERT](sql-insert) — 在一个表中创建新行
+- [LISTEN](sql-listen) — 监听一个通知
+- [LOAD](sql-load) — 载入一个共享库文件
+- [LOCK](sql-lock) — 锁定一个表
+- [MOVE](sql-move) — 定位一个游标
+- [NOTIFY](sql-notify) — 生成一个通知
+- [PREPARE](sql-prepare) — 为执行准备一个语句
+- [PREPARE TRANSACTION](sql-prepare-transaction) — 为两阶段提交准备当前事务
+- [REASSIGN OWNED](sql-reassign-owned) — 更改一个数据库角色拥有的数据库对象的拥有关系
+- [REFRESH MATERIALIZED VIEW](sql-refreshmaterializedview) — 替换一个物化视图的内容
+- [REINDEX](sql-reindex) — 重建索引
+- [RELEASE SAVEPOINT](sql-release-savepoint) — 销毁一个之前定义的保存点
+- [RESET](sql-reset) — 把一个运行时参数的值恢复到默认值
+- [REVOKE](sql-revoke) — 移除访问特权
+- [ROLLBACK](sql-rollback) — 中止当前事务
+- [ROLLBACK PREPARED](sql-rollback-prepared) — 取消一个之前为两阶段提交准备好的事务
+- [ROLLBACK TO SAVEPOINT](sql-rollback-to) — 回滚到一个保存点
+- [SAVEPOINT](sql-savepoint) — 在当前事务中定义一个新的保存点
+- [SECURITY LABEL](sql-security-label) — 定义或更改应用到一个对象的安全标签
+- [SELECT](sql-select) — 从一个表或视图检索行
+- [SELECT INTO](sql-selectinto) — 从一个查询的结果定义一个新表
+- [SET](sql-set) — 更改一个运行时参数
+- [SET CONSTRAINTS](sql-set-constraints) — 为当前事务设置约束检查时机
+- [SET ROLE](sql-set-role) — 设置当前会话的当前用户标识符
+- [SET SESSION AUTHORIZATION](sql-set-session-authorization) — 设置当前会话的会话用户标识符和当前用户标识符
+- [SET TRANSACTION](sql-set-transaction) — 设置当前事务的特性
+- [SHOW](sql-show) — 显示一个运行时参数的值
+- [START TRANSACTION](sql-start-transaction) — 开始一个事务块
+- [TRUNCATE](sql-truncate) — 清空一个表或者一组表
+- [UNLISTEN](sql-unlisten) — 停止监听一个通知
+- [UPDATE](sql-update) — 更新一个表的行
+- [VACUUM](sql-vacuum) — 垃圾收集并根据需要分析一个数据库
+- [VALUES](sql-values) — 计算一个行集合
