@@ -2,14 +2,14 @@
 title: GET STARTED
 description: GET STARTED
 published: true
-date: 2021-08-23T03:42:34.782Z
+date: 2021-08-25T08:31:01.958Z
 tags: get started
 editor: markdown
 dateCreated: 2020-08-09T07:09:32.082Z
 ---
 
 # 什么是citus
-citus 和 postgresql 版本无需太过在意,citus 是由内向外扩展构建的.是作为postgresql 的一个扩展,用于在多台机器的集群中分发数据和查询.作为一个扩展(而不是分支),citus 允许使用postgresql 最新的版本.
+citus 和 postgresql 版本无需太过关注,citus 是由内向外扩展构建的.是作为postgresql 的一个扩展,用于在多台机器的集群中分发数据和查询.作为一个扩展(而不是分支),所以citus 可以适配到最新的postgresql数据库.
 
 citus 使用分布式(切片)和复制在多台机器上水平扩展postgresql.使用查询引擎并行传入sql 查询.支持在大型数据库上的快速响应.
 
