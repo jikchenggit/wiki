@@ -2,10 +2,10 @@
 title: kingbase 官方手册
 description: kingbase 官方手册
 published: true
-date: 2021-08-23T03:37:12.704Z
+date: 2021-10-11T07:10:20.536Z
 tags: kingbase,手册
 editor: markdown
-dateCreated: 2020-02-29T14:19:18.899Z
+dateCreated: 2021-08-23T10:06:24.109Z
 ---
 
 # 阅读此文档的准备
@@ -21,6 +21,9 @@ dateCreated: 2020-02-29T14:19:18.899Z
 - [1. 从头开始](tutorial-start) 
 - [2. SQL语言](tutorial-sql)
 - [3. 高级特性](tutorial-advanced)
+# 学习路线
+- [1. 学习路线图](road-map) 
+
 {.links-list}
 # [II. 服务器管理](admin)
 {.grid-list}
