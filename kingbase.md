@@ -2,7 +2,7 @@
 title: kingbase 官方手册
 description: kingbase 官方手册
 published: true
-date: 2021-10-11T07:10:20.536Z
+date: 2021-10-12T09:40:42.680Z
 tags: kingbase,手册
 editor: markdown
 dateCreated: 2021-08-23T10:06:24.109Z
@@ -23,6 +23,7 @@ dateCreated: 2021-08-23T10:06:24.109Z
 - [3. 高级特性](tutorial-advanced)
 # 学习路线
 - [1. 学习路线图](road-map) 
+- [2. 物理架构](physical-structure)
 
 {.links-list}
 # [II. 服务器管理](admin)
