@@ -2,7 +2,7 @@
 title: 使用通用二进制文件在unixlinux安装MySQL
 description: 使用通用二进制文件在unixlinux安装MySQL
 published: true
-date: 2021-08-23T03:21:54.374Z
+date: 2021-10-30T14:30:03.160Z
 tags: mysql, 二进制安装
 editor: markdown
 dateCreated: 2020-03-01T09:42:10.003Z
@@ -144,4 +144,29 @@ shell> bin/mysql_ssl_rsa_setup
 #### 指定目录创建
 ```sh
 bin/mysql_ssl_rsa_setup --datadir=/app/mysql/mysql-files/
+```
+
+### 设置启动项
+```sql
+cp mysql.server  /etc/init.d/mysqld
+chmod +x /etc/init.d/mysqld
+chkconfig --add mysqld
+chkconfig mysqld on
+```
+### 创建my.cnf
+```bash
+[mysqld]
+basedir=/opt/mysql
+datadir=/opt/data
+log_error=/opt/logs/mysqld_error.log
+pid-file=/opt/data/mysqld.pid
+```
+###  创建文件
+```bash
+touch /opt/logs/mysqld_error.log
+chown mysql:mysql /opt/logs/mysqld_error.log
+```
+###  启动数据库
+```bash
+systemctl start  mysqld
 ```
