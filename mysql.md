@@ -2,12 +2,17 @@
 title: mysql
 description: MySQL DOC
 published: true
-date: 2021-08-23T03:20:58.639Z
+date: 2021-11-03T07:13:12.283Z
 tags: mysql
 editor: markdown
 dateCreated: 2020-02-29T14:31:27.719Z
 ---
 
+# 1. MySQL OCP 学习
+{.grid-list}
+- [安装MySQL](install)
+- [安装目录](install_directory)
+{.links-list}
 # 1. MySQL基础知识
 {.grid-list}
 - [介绍MySQL基础信息](/zh/mysql/介绍mysql基础信息)
