@@ -2,7 +2,7 @@
 title: postgresql
 description: postgresql doc
 published: true
-date: 2021-11-06T13:52:16.539Z
+date: 2021-11-06T13:52:52.578Z
 tags: doc, postgresql
 editor: markdown
 dateCreated: 2020-02-29T14:56:25.337Z
@@ -10,7 +10,7 @@ dateCreated: 2020-02-29T14:56:25.337Z
 
 # PostgreSQL 12.2 速查
 [1. 表空间概念](search-tablespaces)
-[2. 表空间概念](WalMiner)
+[2. WalMiner 使用手册](WalMiner)
 # PostgreSQL 12.2 手册
 
 **摘要**
