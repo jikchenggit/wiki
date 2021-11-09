@@ -2,7 +2,7 @@
 title: Walminer 使用文档
 description: Walminer 使用文档
 published: true
-date: 2021-11-06T13:54:01.934Z
+date: 2021-11-09T04:56:35.908Z
 tags: walminer
 editor: markdown
 dateCreated: 2021-11-06T13:54:01.934Z
@@ -57,6 +57,11 @@ WalMiner是从PostgreSQL的WAL(write ahead logs)日志的解析工具，旨在�
    ```bash
    export PATH=/h2/pg_install/bin:$PATH
    ```
+2. 安装系统依赖包
+
+```bash
+yum  install postgresql12-devel redhat-rpm-config
+```
 2. 进入walminer代码路径
 3. 执行编译安装
    ```bash
