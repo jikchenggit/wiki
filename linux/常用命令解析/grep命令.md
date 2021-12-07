@@ -2,7 +2,7 @@
 title: grep命令
 description: grep命令介绍
 published: true
-date: 2021-08-23T03:27:07.643Z
+date: 2021-12-07T02:47:17.286Z
 tags: 命令, grep
 editor: markdown
 dateCreated: 2020-03-20T12:05:33.129Z
@@ -236,4 +236,9 @@ grep -vE 'Database|^$|colname'
 ```console
 
 grep -vE 'Database|^$|colname|SELECT|WHERE|AND|FROM'
+```
+# 常用例子
+1. 完整输出去掉空行及注释
+```console
+grep -Ev “^$|#” 
 ```
