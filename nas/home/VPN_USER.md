@@ -2,7 +2,7 @@
 title: 虚拟化环境使用说明
 description: 虚拟化环境使用说明
 published: true
-date: 2022-02-23T06:08:27.543Z
+date: 2022-02-23T06:09:54.819Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-23T05:14:14.928Z
@@ -43,7 +43,10 @@ dateCreated: 2022-02-23T05:14:14.928Z
 
 ## 管理方式
 > 注意：虚拟机管理界面：192.168.10.21 
-账号密码：administrator@vsphere.local/Kingbase@123
+
+| 账号密码       | 密码 | 数据服务版本 | ip 使用名称   |
+| ------------- | -------- | ------------ | ------------- |
+| administrator@vsphere.local  | Kingbase@123    |              |       |
 {.is-warning}
 # 服务器IP地址规划
 
