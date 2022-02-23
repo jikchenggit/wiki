@@ -2,7 +2,7 @@
 title: 首页
 description: 群晖使用技巧
 published: true
-date: 2021-08-23T03:33:19.749Z
+date: 2022-02-23T03:31:51.291Z
 tags: 群晖
 editor: markdown
 dateCreated: 2020-07-03T17:39:50.589Z
@@ -27,4 +27,9 @@ dateCreated: 2020-07-03T17:39:50.589Z
 
 # 非官方套件
 - [emby: 一个集中式影音体验中心](/zh/nas/emby)
+{.links-list}
+# 虚拟化环境
+- [Vcentor](Vcentor)
+- [服务器环境](server)
+- [VPN使用](VPN_USER)
 {.links-list}
