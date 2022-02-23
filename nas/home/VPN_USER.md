@@ -2,7 +2,7 @@
 title: 虚拟化环境使用说明
 description: 虚拟化环境使用说明
 published: true
-date: 2022-02-23T05:14:14.928Z
+date: 2022-02-23T05:20:23.387Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-23T05:14:14.928Z
@@ -21,4 +21,8 @@ dateCreated: 2022-02-23T05:14:14.928Z
 
 # 
 账号密码
-！[[
+
+|	 账号		|	 密码   |     |
+| --- | --- | --- |
+| zhangliang  	|  123456   |    |
+| zhouchuansheng 	| 123456    |    |
