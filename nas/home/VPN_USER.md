@@ -2,7 +2,7 @@
 title: 虚拟化环境使用说明
 description: 虚拟化环境使用说明
 published: true
-date: 2022-02-23T05:30:59.934Z
+date: 2022-02-23T06:08:27.543Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-23T05:14:14.928Z
@@ -13,7 +13,7 @@ dateCreated: 2022-02-23T05:14:14.928Z
 [openvpn-install-2.4.7-i607-win10.exe](/soft/openvpn-install-2.4.7-i607-win10.exe)
 
 ## 下载配置文件
-[openvpn-client.conf](/vpn/openvpn-client.conf)
+[openvpn-client.ovpn](/vpn/openvpn-client.ovpn)
 # 配置VPN
 ## 准备配置
 1. 配置配置文件目录及后缀名
