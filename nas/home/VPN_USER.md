@@ -2,7 +2,7 @@
 title: 虚拟化环境使用说明
 description: 虚拟化环境使用说明
 published: true
-date: 2022-02-23T06:09:54.819Z
+date: 2022-03-24T13:38:50.673Z
 tags: 
 editor: markdown
 dateCreated: 2022-02-23T05:14:14.928Z
@@ -210,8 +210,8 @@ dateCreated: 2022-02-23T05:14:14.928Z
 | 192.168.10.151 | Centos 7.2 | kingbase8.6   kingbase moniter |               |
 | 192.168.10.152 | Rocky_8.5  | kingbase8.6(stream)            | node2         |
 | 192.168.10.153 | Rocky_8.5  | kingbase8.6(stream)            | node3         |
-| 192.168.10.154 |            |                                |               |
-| 192.168.10.155 |            |                                |               |
+| 192.168.10.154 |  Rocky_8.5	|   kingbase8.6(stream)          | node4         |
+| 192.168.10.155 | Rocky_8.5  |   kingbase8.6(stream)          | node5         |
 | 192.168.10.156 |            |                                |               |
 | 192.168.10.157 |            |                                |               |
 | 192.168.10.158 | Centos 7.2 | kingbaes8.6                    | 单机          |
@@ -221,7 +221,7 @@ dateCreated: 2022-02-23T05:14:14.928Z
 | 192.168.10.162 | Rocky_8.5  | Kingbase8.6                    | (集群) node1  |
 | 192.168.10.163 | Rocky_8.5  | kingbase8.6                    | （集群）node2 |
 | 192.168.10.164 | Rocky_8.5  | kingbase8.6                    | （集群）node3 |
-| 192.168.10.165 |            |                                |               |
+| 192.168.10.165 |  	        |                                |               |
 | 192.168.10.166 |            |                                |               |
 | 192.168.10.167 |            |                                |               |
 | 192.168.10.168 |            |                                |               |
