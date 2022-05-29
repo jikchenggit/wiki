@@ -2,7 +2,7 @@
 title: postgresql
 description: postgresql doc
 published: true
-date: 2022-05-29T08:22:23.082Z
+date: 2022-05-29T08:23:12.633Z
 tags: doc, postgresql
 editor: markdown
 dateCreated: 2020-02-29T14:56:25.337Z
@@ -13,13 +13,13 @@ dateCreated: 2020-02-29T14:56:25.337Z
 [2. WalMiner 使用手册](WalMiner)
 [3. 分析Toast Pointer数据块](Toast_Pointer)
 # postgresql 内核分析
-[[PostgresSql page页结构解析（1）-- 解析方法]](pageinspect插件)
-[[PostgreSQL Page页结构解析（2）--表的页头和行数据指针]](postgresql_table_header)
-[[PostgreSQL Page页结构解析（3）-- 表的行的存储结构]](postgresql_table_block_tuple)
-[[PostgreSQL Page页结构解析（4）-- B-Tree索引的页头和行数据指针]](postgresql_btree_block_header)
-[[PostgreSQL Page页结构解析（5）-- B-Tree索引行的存储结构]](postgresql_btree_block_tuple)
-[[PostgreSQL Page页结构解析（6）-- B-Tree索引Special Space 存储结构]](postgresql_btree_block_special)
-[[PostgreSQL Page页结构解析（6）-- B-Tree索引索引的组织形式(根枝叶的相互连接)]](postgresql_btree_rbl)
+[PostgresSql page页结构解析（1）-- 解析方法](pageinspect插件)
+[PostgreSQL Page页结构解析（2）--表的页头和行数据指针]](postgresql_table_header)
+[PostgreSQL Page页结构解析（3）-- 表的行的存储结构](postgresql_table_block_tuple)
+[PostgreSQL Page页结构解析（4）-- B-Tree索引的页头和行数据指针](postgresql_btree_block_header)
+[PostgreSQL Page页结构解析（5）-- B-Tree索引行的存储结构](postgresql_btree_block_tuple)
+[PostgreSQL Page页结构解析（6）-- B-Tree索引Special Space 存储结构](postgresql_btree_block_special)
+[PostgreSQL Page页结构解析（6）-- B-Tree索引索引的组织形式(根枝叶的相互连接)](postgresql_btree_rbl)
 # PostgreSQL 12.2 手册
 
 **摘要**
